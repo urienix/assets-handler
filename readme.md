@@ -6,7 +6,7 @@ Es un pequeño servicio hecho con nodejs, express y multer que te permite montar
 
  - Clona el repositorio a tu servidor e ingresa a la carpeta.
     ```bash
-    git clone https://github.com/urienix/web-files-handler.git && cd web-files-handler
+    git clone https://github.com/urienix/little-librarian.git && cd little-librarian
     ```
 
  - Instala las dependencias.
