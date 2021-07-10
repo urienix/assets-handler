@@ -4,9 +4,9 @@ Es un pequeño servicio hecho con nodejs, express y multer que te permite montar
 
 ### INSTALACIÓN
 
- - Clona el repositorio a tu servidor.
+ - Clona el repositorio a tu servidor e ingresa a la carpeta.
     ```bash
-    git clone https://github.com/urienix/web-files-handler.git
+    git clone https://github.com/urienix/web-files-handler.git && cd web-files-handler
     ```
 
  - Instala las dependencias.
