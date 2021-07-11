@@ -20,7 +20,12 @@ Es un pequeño servicio hecho con nodejs, express y multer que te permite montar
     echo "HOST=http://localhost" >> .env && echo "PORT=5000" >> .env
     ```
 
- - Construye el proyecto y crea los directorios de public.
+ - Si quieres correrlo sin construirlo, primero crea los directorios de almacenamiento.
+    ```bash
+    mkdir src/public && mkdir src/public/images
+    ```
+
+ - Si quieres tenerlo en producción, construye el proyecto y crea los directorios de almacenamiento.
     ```bash
     npm run build && mkdir build/public build/public/images
     ```

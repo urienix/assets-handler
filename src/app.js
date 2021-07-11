@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 import { config } from 'dotenv';
+import cors from 'cors';
 
 config();
 
@@ -13,6 +14,7 @@ app.set('port', process.env.PORT || 6000);
 // middlewares
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+app.use(cors());
 
 // Routes
 app.use(mainRoute);

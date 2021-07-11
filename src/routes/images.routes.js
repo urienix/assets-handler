@@ -54,7 +54,7 @@ router.post('/', multer(multerConfig).single('image'), (req, res) => {
         res.status(200).send({
             ok: req.uploaded.ok,
             message: req.uploaded.message,
-            host: `${process.env.HOST}:${process.env.PORT}`,
+            host: `${process.env.HOST}`,
             url: `/images/${req.file.filename}`
         });
     } else {
