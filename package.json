@@ -1,7 +1,7 @@
 {
-  "name": "image-handler-api",
+  "name": "miawchu-library",
   "version": "0.0.1",
-  "description": "Image handler for your own server",
+  "description": "Multimedia library for your own server",
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/urienix/web-files-handler.git"
+    "url": "https://github.com/urienix/miawchu-library.git"
   },
   "keywords": [
     "web",
@@ -22,9 +22,9 @@
   "author": "urienix",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/urienix/web-files-handler/issues"
+    "url": "https://github.com/urienix/miawchu-library/issues"
   },
-  "homepage": "https://github.com/urienix/web-files-handler#readme",
+  "homepage": "https://github.com/urienix/miawchu-library#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
