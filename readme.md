@@ -1,12 +1,12 @@
-# Little librarian
+# Miawchu library
 
-Es un pequeño servicio hecho con nodejs, express y multer que te permite montar tu propio servidor de imagenes, archivos y demas multimedia
+Es un pequeño servicio hecho con nodejs, express y multer que te permite montar tu propio servidor de imagenes, archivos y demas multimedias
 
 ### INSTALACIÓN
 
  - Clona el repositorio a tu servidor e ingresa a la carpeta.
     ```bash
-    git clone https://github.com/urienix/little-librarian.git && cd little-librarian
+    git clone https://github.com/urienix/miawchu-library.git && cd miawchu-library
     ```
 
  - Instala las dependencias.
