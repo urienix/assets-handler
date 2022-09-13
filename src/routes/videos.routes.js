@@ -12,7 +12,7 @@ const multerConfig = {
 
         //specify destination
         destination: function (req, file, next) {
-            next(null, path.join(__dirname, '../public/images'));
+            next(null, path.join(__dirname, '../public/videos'));
         },
 
         //specify the filename to be unique
@@ -31,32 +31,32 @@ const multerConfig = {
         }
 
         // only permit image mimetypes
-        const image = file.mimetype.startsWith('image/');
+        const image = file.mimetype.startsWith('video/');
         if (image) {
             req.uploaded = {
                 ok: true,
-                message: 'Imagen subida exitosamente'
+                message: 'Video cargado exitosamente'
             }
             next(null, true);
         } else {
             //TODO: A better message response to user on failure.
             req.uploaded = {
                 ok: false,
-                message: 'Imagen no soportada'
+                message: 'Formato no soportado'
             }
             return next();
         }
     }
 };
 
-router.post('/', multer(multerConfig).single('image'), (req, res) => {
+router.post('/', multer(multerConfig).single('video'), (req, res) => {
     if (req.uploaded.ok) {
         res.status(200).send({
             ok: req.uploaded.ok,
             message: req.uploaded.message,
             host: `${process.env.HOST}`,
-            url: `/images/${req.file.filename}`,
-            fullUrl: `${process.env.HOST}/images/${req.file.filename}`
+            url: `/videos/${req.file.filename}`,
+            fullUrl: `${process.env.HOST}/videos/${req.file.filename}`
         });
     } else {
         res.status(400).send({
